@@ -1,4 +1,15 @@
 .Cover{
-  width: 100%;
-  height: 200px;
+  height: auto;
+}
+
+.Name{
+  top: -3rem;
+  background-color:black;
+  color: White;
+  text-shadow: gray 1px 1px;
+  text-align: center;
+}
+
+body{
+  background-color:lightblue;
 }

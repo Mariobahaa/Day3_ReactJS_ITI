@@ -1,11 +1,16 @@
+import { Link } from "react-router-dom";
+
 const Artist = (props)=>{
     if(props.info)
     {
         return (
-            <div>
+            <div >
+            <Link to={`/artist-details/${props.info.id}`}>
             <img src = {`images/covers/${props.info.cover}.jpg`}
-            className= "row"></img>
-            <h4 className= "col-4 position-relative">{props.info.name}</h4>
+            className= "col-12 col-md-6 offset-md-3  Cover"></img>
+          
+            <h4 className= " offset-3 col-6 col-md-4 offset-md-4 position-relative Name">{props.info.name}</h4>
+            </Link>
             </div>
         )
     }
