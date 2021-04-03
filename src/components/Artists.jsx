@@ -18,7 +18,7 @@ export default class Artists extends Component{
         return (
             <div className="row p-0 m-0">
     
-            <img src="images/cover.png" className="row p-0 m-0 h-25"></img>
+            <img src="/images/cover.png" className="row p-0 m-0 h-25"></img>
             <h1 className= "offset-4 col-4 text-center">Artists</h1>
             <br/> <br/>
              {this.renderArtists(this.state)}

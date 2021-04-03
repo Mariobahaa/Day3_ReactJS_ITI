@@ -22,7 +22,7 @@ export default class ArtistDetails extends Component{
     LoadAlbums(){
         if(this.state.loaded)
         return this.state.artist.albums.map((alb)=>
-        (<img src={`images/albums/${alb.cover}.jpg`} alt={alb.cover}/>))
+        (<img src={`/images/albums/${alb.cover}.jpg`} className= " offset-1 col-5 h-50" alt={alb.cover}/>))
         else return;
     }
 
@@ -39,11 +39,11 @@ export default class ArtistDetails extends Component{
         </div>
         </Link>
         <div className = "row text-center">
-        <img src = {`images/covers/${this.state.artist.cover??""}.jpg`}
+        <img src = {`/images/covers/${this.state.artist.cover??""}.jpg`}
         className = "col-4 offset-4" alt={this.state.artist.cover}></img>
         <h5>{this.state.artist.name??""}</h5>
         <p>{this.state.artist.bio??""}</p>
-        <div>
+        <div className="row">
         {
             
             this.LoadAlbums()
