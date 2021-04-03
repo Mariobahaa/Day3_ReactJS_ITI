@@ -16,8 +16,8 @@ function App() {
     <BrowserRouter>
     <Switch>
       <Route exact path="/" component={Artists}></Route>
+      <Route path="/artists/:id" component={ArtistDetails}></Route>
       <Route path="/artists" component={Artists}></Route>
-      <Route path="/artist-details" component={ArtistDetails}></Route>
 
     </Switch>
     </BrowserRouter>

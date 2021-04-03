@@ -5,7 +5,7 @@ const Artist = (props)=>{
     {
         return (
             <div >
-            <Link to={`/artist-details/${props.info.id}`}>
+            <Link to={`/artists/${props.info.id}`}>
             <img src = {`images/covers/${props.info.cover}.jpg`}
             className= "col-12 col-md-6 offset-md-3  Cover"></img>
           
